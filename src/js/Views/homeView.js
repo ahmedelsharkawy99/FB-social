@@ -11,7 +11,8 @@ class HomeView extends Posts {
     let currentPage = 2;
     window.addEventListener("scroll", function () {
       const endOfPage =
-        window.innerHeight + window.pageYOffset >= document.body.offsetHeight;
+        window.innerHeight + window.pageYOffset >=
+        document.body.offsetHeight - 1;
       if (!endOfPage) return;
       handeler(currentPage, reload);
       currentPage++;
