@@ -1,0 +1,281 @@
+@import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&display=swap");
+
+body {
+  background-color: #f0ecff;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+textarea {
+  resize: none;
+}
+
+figure {
+  width: 100%;
+}
+
+figure img {
+  display: block;
+  margin: 0 auto;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+#posts {
+  min-height: 300px;
+}
+.post-img {
+  display: none;
+}
+.post-text-container {
+  width: 90%;
+}
+.upload-pic {
+  width: 50px;
+  cursor: pointer;
+}
+.upload-pic svg {
+  fill: #0a58ca;
+}
+.close-container,
+.menu-btn {
+  display: none !important;
+}
+.profile-img {
+  width: 40px;
+  height: 40px;
+}
+.main-profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.data {
+  font-weight: 500;
+  margin: 0;
+}
+.number-info {
+  color: black;
+  font-size: 2rem;
+  font-weight: normal;
+}
+.alert-custom {
+  position: fixed;
+  min-width: 300px;
+  bottom: 10px;
+  right: 10px;
+  z-index: 10;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  transition: all 0.3s;
+  height: 100%;
+  z-index: 1000;
+}
+
+.hidden {
+  display: none !important;
+}
+.show-sidebar {
+  left: 0 !important;
+}
+.fs-6 {
+  font-size: 0.8rem !important;
+}
+
+.comment img,
+.comment strong,
+#post-body-main,
+.nav-link,
+#user-data,
+.card-header .user-data,
+#posts .card-body {
+  cursor: pointer;
+}
+.card.profile-data-container {
+  cursor: default;
+}
+/* Fixing Floating labels  */
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label,
+.form-floating > .form-select ~ label {
+  opacity: 0.65;
+  transform: scale(0.7) translateY(-1rem) translateX(0.15rem);
+}
+
+/* Loader  */
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  z-index: 100000;
+}
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fff;
+  margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Loader  */
+/* Error Page */
+.mainbox {
+  background-color: #95c2de;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.msg {
+  text-align: center;
+  font-size: 1.6rem;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+/* Error Page */
+/* Small phone media quiery  */
+@media (max-width: 350px) {
+  .col-9 {
+    width: 100%;
+  }
+  .add-post {
+    left: 5px;
+  }
+
+  .alert-custom {
+    position: fixed;
+    min-width: 150px;
+    bottom: 30px;
+    right: 10px;
+    z-index: 100;
+  }
+}
+@media (min-width: 578px) {
+  .sidebar {
+    left: 5% !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .sidebar {
+    left: -100%;
+    background-color: #fff;
+    width: 200px;
+  }
+
+  .close-container {
+    display: flex !important;
+  }
+
+  .menu-btn {
+    display: inline-block !important;
+    background-color: transparent;
+    border: 1px solid #0000001a;
+    width: fit-content;
+    height: fit-content;
+    color: #0000008c;
+  }
+  #user-data-info,
+  #user-data-numbers {
+    width: 75% !important;
+  }
+}

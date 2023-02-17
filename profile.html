@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#317EFB" />
+    <meta
+      name="description"
+      content="A Posts sharing social network service. on which users send and respond publicly or privately texts and images!"
+    />
+    <title>Profile</title>
+    <!-- Favicons -->
+    <link rel="icon" href="src/imgs/favicon_io/favicon-32x32.png" />
+    <link
+      rel="apple-touch-icon"
+      href="src/imgs/favicon_io/apple-touch-icon.png"
+    />
+    <link rel="mainfest" href="src/manifest.webmanifest" />
+    <!-- Favicons -->
+    <!-- Css Main File -->
+    <link rel="stylesheet" href="src/css/style.css" />
+    <script type="module" src="src/js/main.js"></script>
+  </head>
+  <body>
+    <!-- Modals -->
+    <div class="modals"></div>
+    <!-- Modals -->
+    <!-- Menu Btn -->
+    <button
+      type="button"
+      class="py-1 px-2 menu-btn rounded"
+      role="button"
+      aria-label="Toggle Sidebar"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        fill="currentColor"
+        class="bi bi-list"
+        viewBox="0 0 16 16"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+        />
+      </svg>
+    </button>
+    <!-- Menu Btn -->
+
+    <!-- Main content conatiner -->
+    <div class="container mt-4">
+      <!-- Create Post -->
+      <div class="d-flex justify-content-sm-end justify-content-center">
+        <div class="col-sm-8 col-9 mb-4">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <form
+                  class="d-flex align-items-center justify-content-between show-modal"
+                >
+                  <div class="form-floating post-text-container">
+                    <textarea
+                      class="form-control post-body bg-white"
+                      placeholder="Leave a comment here"
+                      id="post-body-main"
+                      disabled
+                    ></textarea>
+                    <label for="post-body-main">Post Text</label>
+                  </div>
+                  <div>
+                    <input
+                      type="file"
+                      name="post-img"
+                      id="post-img-main"
+                      class="post-img"
+                    />
+                    <label
+                      class="upload-pic d-flex align-items-center justify-content-center"
+                      for="post-img-main"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        fill="currentColor"
+                        class="bi bi-image"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"
+                        />
+                        <path
+                          d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z"
+                        />
+                      </svg>
+                    </label>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Create Post -->
+      <div class="d-flex justify-content-sm-end justify-content-center mb-3">
+        <div class="col-sm-8 col-9" id="user-profile-data"></div>
+      </div>
+      <!-- Posts -->
+
+      <main class="d-flex justify-content-sm-end justify-content-center">
+        <div id="posts" class="col-sm-8 col-9"></div>
+      </main>
+      <!-- Posts -->
+    </div>
+    <!-- Main content conatiner -->
+  </body>
+</html>

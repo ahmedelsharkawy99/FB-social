@@ -1,0 +1,163 @@
+<!-- Create Post Model -->
+<div
+  class="modal fade"
+  id="create-post-model"
+  tabindex="-1"
+  aria-labelledby="create-post-model-container"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="create-post-model-container">
+          Create Post
+        </h2>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="post-body-model" class="col-form-label"> Text: </label>
+            <textarea
+              class="form-control .post-body"
+              id="post-body-model"
+              required
+            ></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="post-img-model" class="col-form-label"> Image: </label>
+            <input
+              type="file"
+              name="post-img"
+              id="post-img-model"
+              class="form-control .post-img"
+            />
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-outline-secondary"
+          data-bs-dismiss="modal"
+        >
+          Close
+        </button>
+        <button type="button" class="btn btn-outline-success" id="create-post">
+          Create Post
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Create Post Model -->
+
+<!-- Edit Post Model -->
+<div
+  class="modal fade"
+  id="edit-post-model"
+  tabindex="-1"
+  aria-labelledby="edit-post-model-container"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="edit-post-model-container">
+          Edit Post
+        </h2>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="edit-post-body" class="col-form-label"> Body: </label>
+            <textarea
+              class="form-control"
+              id="edit-post-body"
+              required
+            ></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="edit-post-img" class="col-form-label"> Image: </label>
+            <input
+              type="file"
+              name="edit-post-img"
+              id="edit-post-img"
+              class="form-control"
+            />
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-outline-secondary"
+          data-bs-dismiss="modal"
+        >
+          Close
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-success"
+          id="edit-post-btn"
+        >
+          Edit Post
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- edit Post Model -->
+<!-- Delete Post Model -->
+<div
+  class="modal fade"
+  id="delete-post-model"
+  tabindex="-1"
+  aria-labelledby="delete-post-model-container"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="delete-post-model-container">
+          Delete Post
+        </h2>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">Are you sure you want to delete this post?</div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-outline-secondary"
+          data-bs-dismiss="modal"
+        >
+          Close
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-danger"
+          id="delets-post-btn"
+        >
+          Confirm Delete
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Delete Post Model -->
